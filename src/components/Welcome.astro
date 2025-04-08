@@ -38,7 +38,11 @@
       <p class="text-green-800 font-medium">✓ 100% Free to download and use</p>
     </div>
     
-    <a href="/downloads/SafeStay_Cards_001.pdf" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-4 px-4 rounded-lg transition-colors">
+    <a 
+      id="download-button"
+      href="/downloads/SafeStay_Cards_001.pdf" 
+      class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-4 px-4 rounded-lg transition-colors"
+    >
       Download SafeStay&trade; Cards (PDF)
     </a>
     
@@ -92,3 +96,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  // Track PDF downloads
+  document.getElementById('download-button')?.addEventListener('click', function() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'download', {
+        'event_category': 'Downloads',
+        'event_label': 'SafeStay Cards PDF',
+        'value': 1
+      });
+    }
+  });
+</script>
