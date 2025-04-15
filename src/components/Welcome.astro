@@ -131,15 +131,21 @@
   </div>
 </div>
 
-<script>
+<script is:inline>
   // Track PDF downloads
   document.getElementById('download-button')?.addEventListener('click', function() {
-    if (typeof gtag === 'function') {
-      gtag('event', 'download', {
+    console.log("Download button clicked");
+    
+    // Send event to Google Analytics
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'download', {
         'event_category': 'Downloads',
         'event_label': 'SafeStay Cards PDF',
         'value': 1
       });
+      console.log("Event sent to GA");
+    } else {
+      console.log("gtag not available");
     }
   });
 </script>
