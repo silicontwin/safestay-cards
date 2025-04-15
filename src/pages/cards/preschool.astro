@@ -1,0 +1,31 @@
+---
+// src/pages/cards/preschool.astro
+import Layout from '../../layouts/Layout.astro';
+import CardLayout from '../../components/CardLayout.astro';
+import { commonQuestions } from '../../data/CommonQuestions';
+
+const specificQuestions = [
+  "Do you use car seats appropriately for travel?",
+  "Are there stairs or high places accessible to children without safety gates?",
+  "Are electrical outlets covered or otherwise child-proofed?",
+  "Are small objects that could be choking hazards kept away from children?",
+  "What is your approach to bathroom supervision?",
+  "What are your nap/sleep routines and supervision?",
+  "How do you handle toilet training accidents or other bathroom needs?"
+];
+
+const title = "Preschool to Kindergarten";
+---
+
+<Layout title={`SafeStay Cards - ${title}`}>
+  <CardLayout 
+    title={title}
+    ageRange="Ages 3-5"
+    icon="🌱"
+    color="blue"
+    questions={{
+      common: commonQuestions,
+      specific: specificQuestions
+    }}
+  />
+</Layout>
