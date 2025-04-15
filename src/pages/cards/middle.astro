@@ -1,0 +1,31 @@
+---
+// src/pages/cards/middle.astro
+import Layout from '../../layouts/Layout.astro';
+import CardLayout from '../../components/CardLayout.astro';
+import { commonQuestions } from '../../data/CommonQuestions';
+
+const specificQuestions = [
+  "Are computers or mobile devices allowed in bedrooms or private spaces?",
+  "Do your children have access to streaming services or online gaming?",
+  "Have you discussed topics like vaping, alcohol, or substance use?",
+  "How do you supervise interactions between older siblings and younger children?",
+  "What are your rules around privacy in bathrooms and changing areas?",
+  "How do you monitor communications with friends or others outside the home?",
+  "What are your expectations regarding homework or responsibilities during visits?"
+];
+
+const title = "Middle School";
+---
+
+<Layout title={`SafeStay Cards - ${title}`}>
+  <CardLayout 
+    title={title}
+    ageRange="Ages 11-13"
+    icon="🎯"
+    color="yellow"
+    questions={{
+      common: commonQuestions,
+      specific: specificQuestions
+    }}
+  />
+</Layout>
