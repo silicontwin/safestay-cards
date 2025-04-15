@@ -3,56 +3,94 @@
 ---
 
 <div class="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 px-4 py-8 flex flex-col justify-center items-center">
-  <div class="max-w-md w-full bg-white rounded-xl shadow-lg p-6 text-center">
-    <h1 class="text-3xl font-bold text-blue-600 mb-4">SafeStay&trade; Cards</h1>
-    <p class="text-gray-600 mb-6">Peace of Mind in Every Conversation</p>
-    
-    <div class="space-y-4 mb-6">
-      <h2 class="text-lg font-medium text-gray-800">The cards cover four age groups:</h2>
-      
-      <div class="grid grid-cols-2 gap-3">
-        <div class="bg-blue-50 p-3 rounded-lg">
-          <span class="text-xl block mb-1">🌱</span>
-          <span class="font-medium text-blue-700">Ages 3-5</span>
-        </div>
-        <div class="bg-green-50 p-3 rounded-lg">
-          <span class="text-xl block mb-1">🎒</span>
-          <span class="font-medium text-green-700">Ages 6-10</span>
-        </div>
-        <div class="bg-yellow-50 p-3 rounded-lg">
-          <span class="text-xl block mb-1">🎯</span>
-          <span class="font-medium text-yellow-700">Ages 11-13</span>
-        </div>
-        <div class="bg-purple-50 p-3 rounded-lg">
-          <span class="text-xl block mb-1">🎓</span>
-          <span class="font-medium text-purple-700">Ages 14-18</span>
-        </div>
-      </div>
-      
-      <p class="text-sm text-gray-600 mt-3">
-        Each card set contains thoughtful questions to ensure your child's safety when visiting other homes.
-      </p>
+  <div class="max-w-md w-full bg-white rounded-xl shadow-lg p-6">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-blue-600 mb-2">SafeStay™ Cards</h1>
+      <p class="text-gray-600">Peace of Mind in Every Conversation</p>
     </div>
     
-    <div class="bg-green-50 rounded-lg p-3 mb-6">
-      <p class="text-green-800 font-medium">✓ 100% Free to download and use</p>
+    <div class="mb-6">
+      <p class="text-gray-700 mb-4">
+        SafeStay Cards help parents, guardians, and caregivers have important safety conversations when children visit other homes. Each set contains thoughtful questions designed for different age groups.
+      </p>
+      
+      <div class="bg-green-50 rounded-lg p-3 mb-6">
+        <p class="text-green-800 font-medium text-center">✓ 100% Free to download and use</p>
+      </div>
     </div>
     
     <a 
       id="download-button"
-      href="/downloads/SafeStay_Cards_001.pdf" 
-      class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-4 px-4 rounded-lg transition-colors"
+      href="/downloads/SafeStay_Cards_002.pdf" 
+      class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition-colors text-lg text-center mb-8"
     >
-      Download SafeStay&trade; Cards (PDF)
+      Download PDF (All Cards)
     </a>
     
-    <div class="mt-8 pt-6 border-t border-gray-200 space-y-6">
+    <div class="mb-8">
+      <h2 class="text-lg font-medium text-gray-800 mb-3">View Cards by Age Group:</h2>
+      <div class="space-y-3">
+        <a href="/cards/preschool" class="flex items-center bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors">
+          <span class="text-2xl mr-3">🌱</span>
+          <div>
+            <span class="font-medium text-blue-700 block">Preschool to Kindergarten</span>
+            <span class="text-sm text-gray-600">Ages 3-5</span>
+          </div>
+          <span class="ml-auto text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </span>
+        </a>
+        
+        <a href="/cards/elementary" class="flex items-center bg-green-50 p-4 rounded-lg hover:bg-green-100 transition-colors">
+          <span class="text-2xl mr-3">🎒</span>
+          <div>
+            <span class="font-medium text-green-700 block">Elementary School</span>
+            <span class="text-sm text-gray-600">Ages 6-10</span>
+          </div>
+          <span class="ml-auto text-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </span>
+        </a>
+        
+        <a href="/cards/middle" class="flex items-center bg-yellow-50 p-4 rounded-lg hover:bg-yellow-100 transition-colors">
+          <span class="text-2xl mr-3">🎯</span>
+          <div>
+            <span class="font-medium text-yellow-700 block">Middle School</span>
+            <span class="text-sm text-gray-600">Ages 11-13</span>
+          </div>
+          <span class="ml-auto text-yellow-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </span>
+        </a>
+        
+        <a href="/cards/high" class="flex items-center bg-purple-50 p-4 rounded-lg hover:bg-purple-100 transition-colors">
+          <span class="text-2xl mr-3">🎓</span>
+          <div>
+            <span class="font-medium text-purple-700 block">High School</span>
+            <span class="text-sm text-gray-600">Ages 14-18</span>
+          </div>
+          <span class="ml-auto text-purple-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="pt-6 border-t border-gray-200 space-y-5 text-center">
       <div>
         <h3 class="text-md font-medium text-gray-700 mb-2">Contact Us</h3>
         <p class="text-sm text-gray-600">
           Questions or feedback? Email us at:
-          <a href="mailto:approximatelyhuman[at]proton[dot]me" class="text-blue-600 hover:underline">
-            approximatelyhuman[at]proton[dot]me
+          <a href="mailto:approximatelyhuman@proton.me" class="text-blue-600 hover:underline">
+            approximatelyhuman@proton.me
           </a>
         </p>
       </div>
@@ -75,11 +113,7 @@
         </a>
       </div>
       
-      <div>
-        <p class="text-xs text-gray-500">
-          SafeStay&trade; Cards help parents have important safety conversations when children visit or stay at other homes.
-        </p>
-        
+      <div class="text-center">
         <div class="flex justify-center space-x-4 mt-4">
           <a href="https://linkedin.com/in/nwarren" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="text-blue-500 hover:text-blue-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
