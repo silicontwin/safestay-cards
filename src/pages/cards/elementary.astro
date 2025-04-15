@@ -1,0 +1,31 @@
+---
+// src/pages/cards/elementary.astro
+import Layout from '../../layouts/Layout.astro';
+import CardLayout from '../../components/CardLayout.astro';
+import { commonQuestions } from '../../data/CommonQuestions';
+
+const specificQuestions = [
+  "Are there screen time rules in your home?",
+  "Do you have parental controls on your devices and streaming services?",
+  "How do you handle age-inappropriate content (movies, video games)?",
+  "What is your policy on sleepovers—bedtimes, sleeping arrangements, etc.?",
+  "Are there trampolines, bikes, skateboards, or scooters, and are helmets required?",
+  "Is bullying or conflict among children addressed proactively?",
+  "How do you handle drop-off and pick-up arrangements?"
+];
+
+const title = "Elementary School";
+---
+
+<Layout title={`SafeStay Cards - ${title}`}>
+  <CardLayout 
+    title={title}
+    ageRange="Ages 6-10"
+    icon="🎒"
+    color="green"
+    questions={{
+      common: commonQuestions,
+      specific: specificQuestions
+    }}
+  />
+</Layout>
