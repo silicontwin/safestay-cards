@@ -1,6 +1,6 @@
 # SafeStay™ Cards Website
 
-SafeStay Cards help parents have important safety conversations when children visit or stay at other homes. These conversation cards are designed to touch upon topics that may never normally come up, such as firearm safety, internet access, and household hazards.
+SafeStay Cards help parents, guardians, and caregivers have important safety conversations when children visit or stay at other homes. These conversation cards are designed to address topics that may never normally come up, such as firearm safety, internet access, and household hazards.
 
 ## About the Project
 
@@ -11,14 +11,14 @@ SafeStay Cards include age-appropriate questions for four different age groups:
 - 🎯 Middle School (Ages 11-13)
 - 🎓 High School (Ages 14-18)
 
-Each card set contains thoughtful questions designed to ensure your child's safety when visiting other homes.
+Each card set contains thoughtful questions designed to ensure children's safety when visiting other homes.
 
 ### Features
 
 - **100% Free**: SafeStay Cards are completely free to download and use
 - **Age-Appropriate**: Separate card sets tailored to different developmental stages
 - **Comprehensive**: Covers the top safety concerns for each age group
-- **Open Source**: Contribute to improve the cards for all parents
+- **Open Source**: Contribute to improve the cards for all caregivers
 
 ## Contributing
 
@@ -26,7 +26,7 @@ We welcome contributions! Whether you want to suggest new safety questions, impr
 
 ## Contact
 
-Questions or feedback? Email us at: approximatelyhuman[at]proton[dot]me
+Questions or feedback? Email us at: approximatelyhuman@proton.me
 
 ## Development Information
 
