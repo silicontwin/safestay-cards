@@ -1,0 +1,31 @@
+---
+// src/pages/cards/high.astro
+import Layout from '../../layouts/Layout.astro';
+import CardLayout from '../../components/CardLayout.astro';
+import { commonQuestions } from '../../data/CommonQuestions';
+
+const specificQuestions = [
+  "Do you openly discuss safe relationships, consent, and dating with your teens?",
+  "What policies do you have around curfew and leaving the home at night?",
+  "How do you manage driving safety and transportation arrangements?",
+  "Are alcohol or substances ever accessible in your home?",
+  "How is mental health addressed in your family?",
+  "Have you discussed your family's values around sexuality, peer pressure, and decision-making?",
+  "How do you approach discipline or address problematic behavior among teens?"
+];
+
+const title = "High School";
+---
+
+<Layout title={`SafeStay Cards - ${title}`}>
+  <CardLayout 
+    title={title}
+    ageRange="Ages 14-18"
+    icon="🎓"
+    color="purple"
+    questions={{
+      common: commonQuestions,
+      specific: specificQuestions
+    }}
+  />
+</Layout>
